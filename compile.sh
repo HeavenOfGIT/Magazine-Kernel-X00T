@@ -6,7 +6,7 @@ git clone --depth=1 https://github.com/Plankton00/Magazine-Kernel-X00T.git Magaz
 # Main
 KERNEL_ROOTDIR=$(pwd)/Magazine-HMP # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_DEFCONFIG=Magazine_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
-CLANG_ROOTDIR=$(pwd)/Predator Clang # IMPORTANT! Put your clang directory here.
+CLANG_ROOTDIR=$(pwd)/PredatorClang # IMPORTANT! Put your clang directory here.
 export KBUILD_BUILD_USER=StarWars # Change with your own name or else.
 export KBUILD_BUILD_HOST=Plankton86 # Change with your own hostname.
 CLANG_VER="$("$CLANG_ROOTDIR"/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')"
